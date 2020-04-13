@@ -1,0 +1,30 @@
+# Database Settings
+spring:
+  thymeleaf:
+    cache: false
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3307/springblog?useSSL=false&serverTimezone=UTC
+    platform: h2
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: true
+        format_sql: true
+# mybatis Settings
+mybatis:
+  mapper-locations: "classpath:mapper/*.xml"  
+  configuration-properties:
+      aggressiveLazyLoading: false
+      lazyLoadingEnabled: true
+      mapUnderscoreToCamelCase: true
