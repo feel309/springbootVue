@@ -48,7 +48,8 @@ public class MemberController {
 	}
 	
 	@PostMapping("/join")
-	public @ResponseBody String postJoin(@RequestBody Member member, HttpSession session) {
+	public @ResponseBody String postJoin( Member member, HttpSession session) {
+		System.out.println("---------"+ member);
 		String encryptPw = pwEncoder.encode(member.getUpw());
 		log.info("hash password: " + encryptPw);
 		member.setUpw(encryptPw);
