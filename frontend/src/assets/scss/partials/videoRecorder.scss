@@ -1,0 +1,10 @@
+.record-container {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 50px;
+    video {
+      background-color: $black; // 녹화 배경 블랙
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

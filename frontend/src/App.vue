@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
@@ -11,13 +10,19 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "/assets/scss/config/_variables.scss";
+@import "/assets/scss/config/reset.scss";
+@import "/assets/scss/config/utils.scss";
+@import "/assets/scss/main.scss";
+@import "/assets/scss/partials/header.scss";
+@import "/assets/scss/partials/footer.scss";
+@import "/assets/scss/partials/form.scss";
+@import "/assets/scss/partials/socialLogin.scss";
+@import "/assets/scss/partials/videoBlock.scss";
+@import "/assets/scss/partials/videoPlayer.scss";
+@import "/assets/scss/partials/videoRecorder.scss";
+@import "/assets/scss/pages/home.scss";
+@import "/assets/scss/pages/videoDetail.scss";
+@import "/assets/scss/pages/userProfile.scss";
 </style>

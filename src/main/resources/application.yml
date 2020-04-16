@@ -1,6 +1,7 @@
 # Database Settings
 spring:
   thymeleaf:
+    prefix: classpath:/static/
     cache: false
   main:
     allow-bean-definition-overriding: true
